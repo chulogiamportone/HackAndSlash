@@ -1,9 +1,117 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx3a8onf8govs"]
+[gd_scene load_steps=22 format=3 uid="uid://bx3a8onf8govs"]
+
+[ext_resource type="Texture2D" uid="uid://buiakm2xkcq8e" path="res://Scenes and Scripts/player/pj/caminando_abajo/000.png" id="2_u4qxq"]
+[ext_resource type="Texture2D" uid="uid://c3p6ln5rwjbdq" path="res://Scenes and Scripts/player/pj/caminando_abajo/001.png" id="3_4bh17"]
+[ext_resource type="Texture2D" uid="uid://b68qca6maqbth" path="res://Scenes and Scripts/player/pj/caminando_abajo/002.png" id="4_ua3od"]
+[ext_resource type="Texture2D" uid="uid://dnqloyyclnsm7" path="res://Scenes and Scripts/player/pj/caminando_abajo/003.png" id="5_nuia6"]
+[ext_resource type="Texture2D" uid="uid://7gmgdq3nhqby" path="res://Scenes and Scripts/player/pj/caminando_abajo/004.png" id="6_rlou2"]
+[ext_resource type="Texture2D" uid="uid://nq4d8i3pmdwc" path="res://Scenes and Scripts/player/pj/caminando_abajo/005.png" id="7_jlkk0"]
+[ext_resource type="Texture2D" uid="uid://35we1aoqbd2p" path="res://Scenes and Scripts/player/pj/caminando_abajo/006.png" id="8_i1se7"]
+[ext_resource type="Texture2D" uid="uid://bfmxnggc1u8rh" path="res://Scenes and Scripts/player/pj/caminando_abajo/007.png" id="9_it0og"]
+[ext_resource type="Texture2D" uid="uid://bv84mykaujdww" path="res://Scenes and Scripts/player/pj/abajo idle.png" id="10_b2yyy"]
+[ext_resource type="Texture2D" uid="uid://b658ej5yr5joo" path="res://Scenes and Scripts/player/pj/turro idle.png" id="11_7peej"]
+[ext_resource type="Texture2D" uid="uid://bos5lmukcfdc6" path="res://Scenes and Scripts/player/pj/caminando_arriba/000.png" id="12_es748"]
+[ext_resource type="Texture2D" uid="uid://cgk4ih3wb8148" path="res://Scenes and Scripts/player/pj/caminando_arriba/001.png" id="13_2ihjx"]
+[ext_resource type="Texture2D" uid="uid://ds1ustxbyfr53" path="res://Scenes and Scripts/player/pj/caminando_arriba/002.png" id="14_rhwv8"]
+[ext_resource type="Texture2D" uid="uid://w4d1v8y2ym4f" path="res://Scenes and Scripts/player/pj/caminando_arriba/003.png" id="15_y1fdn"]
+[ext_resource type="Texture2D" uid="uid://d08wvof3j4q62" path="res://Scenes and Scripts/player/pj/caminando_arriba/004.png" id="16_xr6q0"]
+[ext_resource type="Texture2D" uid="uid://27fvk47a3d1" path="res://Scenes and Scripts/player/pj/caminando_arriba/005.png" id="17_2uyji"]
+[ext_resource type="Texture2D" uid="uid://drec4v82avmtf" path="res://Scenes and Scripts/player/pj/caminando_arriba/006.png" id="18_jb42g"]
+[ext_resource type="Texture2D" uid="uid://bvxmb1qhkdhee" path="res://Scenes and Scripts/player/pj/caminando_arriba/007.png" id="19_fmx3n"]
+[ext_resource type="Texture2D" uid="uid://bbfrhsyqn1iug" path="res://Scenes and Scripts/player/pj/arriba idle.png" id="20_vwknu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kparq"]
 size = Vector2(100, 86)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nxt0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u4qxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4bh17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ua3od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nuia6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rlou2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jlkk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i1se7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_it0og")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_b2yyy")
+}],
+"loop": true,
+"name": &"down_idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"side",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_7peej")
+}],
+"loop": true,
+"name": &"side_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_es748")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2ihjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rhwv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_y1fdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xr6q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2uyji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jb42g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fmx3n")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_vwknu")
+}],
+"loop": true,
+"name": &"up_idle",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D"]
 
@@ -12,5 +120,6 @@ shape = SubResource("RectangleShape2D_kparq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nxt0l")
+animation = &"down"
 
 [node name="Camera2D" type="Camera2D" parent="."]
