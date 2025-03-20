@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl2ifiknycgw"]
+
+[ext_resource type="Texture2D" uid="uid://cf4nknhpj2fb7" path="res://Scenes and Scripts/bg_garage2_assets_opt.png" id="1_1uqeh"]
+[ext_resource type="PackedScene" uid="uid://d1rx7d8vrdn7e" path="res://Scenes and Scripts/player/player3d.tscn" id="2_0fgbm"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50.1218, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -42.4683, 0)
+texture = ExtResource("1_1uqeh")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_0fgbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -49.502, 0.1)
